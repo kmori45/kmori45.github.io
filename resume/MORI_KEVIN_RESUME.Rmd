@@ -1,0 +1,84 @@
+---
+title: "Kevin Tsutomu Mori"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+##Contact Information
+65 Plantation, Irvine, CA 92620
+
+kmori@outlook.com
+
+714-642-7786
+
+https://www.linkedin.com/in/kevin-mori/
+
+#Summary of Qualifications
+
+Experienced head of data science with a demonstrated history of starting up analytic teams, recruiting, leading, and mentoring data scientists, applying statistical learning techniques to practical business problems, and running data governance operations.
+
+#Work History
+
+##Senior Manager, Governance and Process Innovation *(Head of Data Science, Advanced Analytics, and Data Governance)*
+###Mazda North American Operations, Irvine, CA October 2016-Present
+
+* Launched Mazda's data science team, a group of 12 data scientists and project managers chartered with deploying analysis and statistical learning algorithms across the organization to optimize business outcomes in the US market.
+
+* Successful data science engagements include vehicle remarketing optimization, trade cycle management, and lease pullahead customer targeting.  Current initiatives led to over $12 million of incremental revenue and reduced cost for Mazda in less than one year.
+
+* Spearhead Mazda's data governance framework, tasked with maintaining oversight over data policies, standards, use cases, and security.  This initiative has led to a 27% reduction in enterprise data costs while increasing data availability and quality. 
+
+* Plan, launch, lead Mazda Knowledge Center, an analytics center of excellence providing insights and data to internal stakeholders.  Analytics from the MKC have led to improvements in MyMazda app signups, optimization of advertising spend by linking customer "high value" actions with marketing tactics, and configuration of Mazda dealer network through target buyer density estimation.
+
+* Coordinate consolidated data science and analytics efforts with Data Engineering team to deliver production-ready applications and analysis across the Mazda organization
+
+##Group Manager, Retail Programs and Remarketing *(Head of Trade Cycle Management Strategy and Predictive Analytics)*
+###Mazda North American Operations, Irvine, CA February 2016-October 2016
+
+* Led a cross-functional team (including Financial Services, incentives, remarketing, digital marketing/CRM, and IT) responsible for development and execution of Mazda's next generation owner retention strategy.
+
+* Optimized customer data handling process for lease pullahead programs to increase in-market customer reach by over 20% 
+
+* Levereged predictive anlaytics to generate automated prescriptive actions including incentive offers, communication strategies, and lease end tools to maximize loyalty.  In-market equity mining pilot led to a $500k reduction in incentive cost while increasing engagement rates.
+
+##Group Manager, Retail Programs and Remarketing *(Head of Pricing, Promotions, and Remarketing)*
+###Mazda North American Operations, Irvine, CA May 2012 – September 2016
+
+* Responsible for the strategic planning, development, accounting, and administration of all Mazda vehicle incentive, salesforce engagement, CPO, and remarketing programs in the United States market, a budget of over $800 million per year.
+
+* Created next generation incentive and sales business analytics platform to improve data-driven decision making. Introduce predictive modeling and machine learning tools to incentive and pricing operations to increase per-unit revenue and retail demand.
+
+* Developed and executed Mazda's long-term leasing strategy, from creation of competitive new vehicle lease programs and enhancing the customer lease experience to off-lease vehicle remarketing and CPO demand generation and engagement.  Increased lease penetration from 15% to over 40%, with significant increases in owner retention.
+
+* Maximized residual value of off-lease vehicles through innovative remarketing programs, CPO demand generation, and dealer engagement programs. Develop “cradle to grave” marketing and remarketing strategies to optimize leasing cycle, leading to 15% increase in upstream vehicle retention.
+
+##Staff Manager, North American and European Support *(Head of North America Region Marketing Planning and Support)*
+###Mazda Motor Corporation, Hiroshima, Japan Sep 2010 – Apr 2012
+
+* Led development of Mazda's North American 5-year mid-term strategic plan. Developed new global process for quarterly volume, marketing, and pricing plans for the North American market.
+
+#Education
+
+##M.S Statistics, California State University, Fullerton, 2017-2019 (expected)
+* Coursework includes statistical computing, statistical and machine learning, categorical data analysis, multivariate statistics, Bayesian statistics. 
+
+##M.A. Economics, California State University, Long Beach (CSULB), 2002-2008
+* J. Richard Powell Award of Merit for Outstanding Scholastic Achievement
+
+##B.A. Economics, University of California, Los Angeles (UCLA), 1997-2001
+* Trainer, UCLA CLICC social sciences computing lab
+
+##B.A. English, University of California, Los Angeles (UCLA), 1997-2001
+
+#Technical Skills
+
+R, Python, SQL, linear and logistic regression, ensemble models (bagging, decision tree, random forest, gradient boosting), unsupervised classification (K-means, EM), supervised classification (KNN, naive bayes), local polynomial methods, variable reduction (PCA, ridge, LASSO, factor analysis), neural networks, experiemental design, A/B testing, outlier detection, time series forecasting, Support vector machines, survival analysis.
+
+
+#Affliliations and Certificates
+
+Member, American Statistical Association, 2017-Present
