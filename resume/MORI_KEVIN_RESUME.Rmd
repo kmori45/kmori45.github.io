@@ -30,11 +30,15 @@ Experienced head of data science with a demonstrated history of starting up anal
 
 * Successful data science engagements include vehicle remarketing optimization, trade cycle management, and lease pullahead customer targeting.  Current initiatives led to over $12 million of incremental revenue and reduced cost for Mazda in less than one year.
 
-* Spearhead Mazda's data governance framework, tasked with maintaining oversight over data policies, standards, use cases, and security.  This initiative has led to a 27% reduction in enterprise data costs while increasing data availability and quality. 
+* Spearhead Mazda's data governance framework, tasked with maintaining oversight over data policies, standards, use cases, and security.  This initiative has led to a 27% reduction in enterprise data costs while increasing data availability and quality. The data governance team also builds and maintains Mazda long-range enterprise data strategy and roadmap, prioritizing and executing on enterprise data and analytics projects that support Mazda's overall brand vision.
 
 * Plan, launch, lead Mazda Knowledge Center, an analytics center of excellence providing insights and data to internal stakeholders.  Analytics from the MKC have led to improvements in MyMazda app signups, optimization of advertising spend by linking customer "high value" actions with marketing tactics, and configuration of Mazda dealer network through target buyer density estimation.
 
 * Coordinate consolidated data science and analytics efforts with Data Engineering team to deliver production-ready applications and analysis across the Mazda organization
+
+* Lead cross function team (IT, Marketing, Agency) tasked with developing future roadmap and 2-3 year plan for ad-tech and mar-tech stack, delivering on Mazda customer loyalty and conquest strategies.
+
+* Designed and led Mazda's data science framework, allowing the data science team to work in a consolidated enviornment to deploy prototype applications and analytics to Mazda business rapidly.
 
 ##Group Manager, Retail Programs and Remarketing *(Head of Trade Cycle Management Strategy and Predictive Analytics)*
 ###Mazda North American Operations, Irvine, CA February 2016-October 2016
@@ -64,19 +68,17 @@ Experienced head of data science with a demonstrated history of starting up anal
 #Education
 
 ##M.S Statistics, California State University, Fullerton, 2017-2019 (expected)
-* Coursework includes statistical computing, statistical and machine learning, categorical data analysis, multivariate statistics, Bayesian statistics. 
 
 ##M.A. Economics, California State University, Long Beach (CSULB), 2002-2008
 * J. Richard Powell Award of Merit for Outstanding Scholastic Achievement
 
 ##B.A. Economics, University of California, Los Angeles (UCLA), 1997-2001
-* Trainer, UCLA CLICC social sciences computing lab
 
 ##B.A. English, University of California, Los Angeles (UCLA), 1997-2001
 
 #Technical Skills
 
-R, Python, SQL, linear and logistic regression, ensemble models (bagging, decision tree, random forest, gradient boosting), unsupervised classification (K-means, EM), supervised classification (KNN, naive bayes), local polynomial methods, variable reduction (PCA, ridge, LASSO, factor analysis), neural networks, experiemental design, A/B testing, outlier detection, time series forecasting, Support vector machines, survival analysis.
+R, Python, SQL, linear and logistic regression, ensemble models (bagging, decision tree, random forest, gradient boosting), unsupervised classification (K-means, EM), supervised classification (KNN, naive bayes), local polynomial methods, variable reduction (PCA, ridge, LASSO, factor analysis), neural networks, experiemental design, A/B testing, outlier detection, time series forecasting, Support vector machines, survival analysis, Bayesian statistics, categorical data analysis, multivariate statistics.
 
 
 #Affliliations and Certificates
