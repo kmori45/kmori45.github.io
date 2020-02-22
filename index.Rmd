@@ -13,18 +13,14 @@ library(tidyverse)
 library(lubridate)
 library(gridExtra)
 library(zoo)
+library(googledrive)
 
 
 ```
 
-## R Markdown
-
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+## Data collection
 
 ```{r include=FALSE, echo = FALSE}
-
 
 if(sheets_has_token()==FALSE){
   sheets_auth(email = "tsutomu45@gmail.com")  
@@ -49,13 +45,28 @@ seedling_data <- filter(sensor_data, device == "seedlingsensor") %>%
   mutate(illuminance = ifelse(illuminance < 90, 0, 1)) %>%
   na.locf()
 
+  drive_auth(email = "tsutomu45@gmail.com")
+  drive_download("weather2.csv", path = "weather.csv", overwrite = TRUE)
+  
+  weather_data <- read.csv("weather.csv", header=FALSE, stringsAsFactors=FALSE)
+  
+  colnames(weather_data) <- c("timestamp","sunrise_time", "sunset_time", "condition_type",
+  "current_temp", "min_temp", "max_temp", "humidity_pct", "cloud_cover_pct")
+  
+  weather_data$timestamp <- as.POSIXct(weather_data$timestamp, origin="1970-01-01")
+  weather_data$sunrise_time <- as.POSIXct(weather_data$sunrise_time, origin="1970-01-01")
+  weather_data$sunset_time <- as.POSIXct(weather_data$sunset_time, origin="1970-01-01")
+  weather_data$date <- as.Date(weather_data$timestamp)
+  
+  
+
 ```
 
 ## Including Plots
 
 Plots
 
-```{r}
+```{r echo = FALSE}
 
 ggplot(seedling_data, aes(x=obs_dt, y=temperature, col = factor(illuminance))) +
   geom_point() + 
@@ -107,4 +118,22 @@ temp2 <- ggplot(outdoor_data, aes(x = obs_dt, y = humidity)) +
         axis.text.y = element_text(colour = "gray"))
 
 grid.arrange(temp1, temp2)
+
+
+  ggplot(data = weather_data, aes(y=humidity_pct/100, x = timestamp)) +
+    geom_point(color = "gray", size = 1) +
+    theme(panel.background = element_rect(fill = "white"),
+          panel.grid.major = element_line(color="gray", size = 0.5)
+    )+
+    stat_smooth(span=0.1) +
+    ggtitle("Relative Humidity Percent")
+  
+  ggplot(data = weather_data, aes(y=cloud_cover_pct/100, x = timestamp)) +
+    geom_point(color = "gray", size = 1) +
+    theme(panel.background = element_rect(fill = "white"),
+          panel.grid.major = element_line(color="gray", size = 0.5)
+    )+
+    ggtitle("Cloud Cover Percent") +
+    stat_smooth(span=0.5)
+
 ```
