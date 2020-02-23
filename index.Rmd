@@ -1,8 +1,10 @@
 ---
-title: "Plant Status"
+title: "Garden Status"
 author: "Kevin Mori"
 date: "2/22/2020"
-output: html_document
+output:
+  rmarkdown::html_document:
+    theme: lumen
 ---
 
 ```{r setup, include=FALSE, echo = FALSE}
@@ -17,8 +19,6 @@ library(googledrive)
 
 
 ```
-
-## Data collection
 
 ```{r include=FALSE, echo = FALSE}
 
@@ -62,9 +62,9 @@ seedling_data <- filter(sensor_data, device == "seedlingsensor") %>%
 
 ```
 
-## Including Plots
+## Germination Area
 
-Plots
+Temperature, light status of the seedling area (areas outside of range are suboptimal for tomatoes and peppers)
 
 ```{r echo = FALSE}
 
@@ -84,8 +84,13 @@ ggplot(seedling_data, aes(x=obs_dt, y=temperature, col = factor(illuminance))) +
         axis.text.x = element_text(colour = "gray"),
         axis.text.y = element_text(colour = "gray"))
 
+```
 
+## Outdoor Garden Area
 
+Ambient temperature, weather conditions, and moisture levels of the outdoor garden
+
+```{r echo = FALSE}
 outdoor_data <- filter(sensor_data, device == "plantsensor") %>%
   select(-device) %>%
   filter(event != "activity") %>%
